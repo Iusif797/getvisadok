@@ -1,0 +1,122 @@
+.how-it-works {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.how-it-works .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.step-icon {
+  width: 200px;
+  height: 200px;
+  background-color: #8a5cf7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.step-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(138, 92, 247, 0.3);
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.indicator-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.indicator {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.indicator-button:hover .indicator {
+  transform: scale(1.2);
+}
+
+/* Анимации для карусели */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-content {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  .how-it-works .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .step-icon {
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+  }
+
+  .step-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .step-icon {
+    width: 130px;
+    height: 130px;
+    font-size: 3.5rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+  }
+}

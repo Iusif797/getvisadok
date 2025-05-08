@@ -5,6 +5,8 @@ import HomeSection from "./components/HomeSection/HomeSection";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import VisaSection from "./components/VisaSection/VisaSection";
 import AboutSection from "./components/AboutSection/AboutSection";
+import HowItWorks from "./components/HowItWorks/HowItWorks";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <VisaSection />
         <WhyChooseUs />
         <AboutSection />
+        <HowItWorks />
+        <ContactSection />
       </main>
     </div>
   );

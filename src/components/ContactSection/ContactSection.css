@@ -1,0 +1,137 @@
+.contact-section {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.contact-item {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-link {
+  font-size: 1.3rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
+}
+
+.chat-help-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.9rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.chat-help-btn:hover {
+  background-color: #00a575;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 194, 138, 0.3);
+}
+
+.chat-icon {
+  margin-left: 1rem;
+  width: 24px;
+  height: 24px;
+}
+
+.social-media {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  .section-title,
+  .social-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-link {
+    font-size: 1.1rem;
+  }
+
+  .chat-help-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    gap: 2rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 350px) {
+  .social-icons {
+    gap: 1.5rem;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
