@@ -1,0 +1,53 @@
+.visa-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.visa-card-header {
+  padding: 0.75rem;
+}
+
+.visa-flag-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.visa-flag-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.visa-country {
+  font-weight: bold;
+}
+
+.visa-info {
+  font-size: 0.9rem;
+}
+
+.visa-type {
+  font-weight: medium;
+}
+
+.visa-duration {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.visa-button {
+  background-color: var(--button-color);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-top: auto;
+}

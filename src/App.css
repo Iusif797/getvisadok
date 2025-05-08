@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: #00c28a;
+  --text-color: #333;
+  --white: #fff;
+  --button-color: #8a5cf7;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 0 20px;
+}
