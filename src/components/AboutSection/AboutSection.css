@@ -1,0 +1,125 @@
+.about-section {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-image: url("../../assets/images/visa-picture1.png");
+  background-size: cover;
+  background-position: center;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 150, 100, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.about-content {
+  text-align: center;
+  max-width: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.about-btn {
+  background-color: #8a5cf7;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #7040e0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(138, 92, 247, 0.4);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 375px) {
+  .about-section {
+    height: 320px;
+    margin: 1.5rem 0;
+  }
+
+  .about-overlay {
+    padding: 1rem;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-section {
+    height: 300px;
+  }
+
+  .about-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 481px) {
+  .about-section {
+    height: 380px;
+    margin: 2.5rem 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    height: 400px;
+  }
+
+  .about-content {
+    max-width: 500px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+}

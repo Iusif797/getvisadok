@@ -1,6 +1,8 @@
 .home-section {
   padding: 1.5rem 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .title {
@@ -9,10 +11,85 @@
   color: var(--primary-color);
   margin-bottom: 0.5rem;
   line-height: 1.2;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  bottom: -5px;
+  left: 35%;
+  background-color: var(--primary-color);
+  transition: width 0.5s ease, left 0.5s ease;
+}
+
+.home-section:hover .title::after {
+  width: 60%;
+  left: 20%;
 }
 
 .description {
   font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 194, 138, 0.05);
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.home-section:hover .description::before {
+  width: 100%;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 375px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 481px) {
+  .home-section {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -20,8 +20,32 @@ body {
 .app {
   max-width: 480px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 main {
   padding: 0 20px;
+}
+
+/* Медиа-запросы для разных размеров экранов */
+@media (max-width: 375px) {
+  .app {
+    max-width: 100%;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 481px) {
+  .app {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .app {
+    max-width: 700px;
+  }
 }

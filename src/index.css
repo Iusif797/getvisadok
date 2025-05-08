@@ -11,17 +11,28 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  touch-action: manipulation;
 }
 
 h1 {
@@ -31,6 +42,28 @@ h1 {
 button {
   cursor: pointer;
   font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+
+/* Скрываем скролл на iOS */
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Улучшение стилей при касании на мобильных устройствах */
+@media (hover: none) {
+  button:active {
+    transform: scale(0.97);
+  }
 }
 
 a {

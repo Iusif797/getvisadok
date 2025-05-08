@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import HomeSection from "./components/HomeSection/HomeSection";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import VisaSection from "./components/VisaSection/VisaSection";
+import AboutSection from "./components/AboutSection/AboutSection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <HomeSection />
         <VisaSection />
         <WhyChooseUs />
+        <AboutSection />
       </main>
     </div>
   );

@@ -5,6 +5,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.visa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .visa-card-header {
@@ -21,6 +27,11 @@
   width: 30px;
   height: 30px;
   margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.visa-card:hover .visa-flag-image {
+  transform: scale(1.1);
 }
 
 .visa-country {
@@ -50,4 +61,57 @@
   text-align: center;
   cursor: pointer;
   margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.visa-button:hover {
+  background-color: #7040e0;
+  letter-spacing: 0.5px;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 375px) {
+  .visa-card-header {
+    padding: 0.6rem;
+  }
+
+  .visa-flag-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .visa-country {
+    font-size: 0.95rem;
+  }
+
+  .visa-info {
+    font-size: 0.85rem;
+  }
+
+  .visa-duration {
+    font-size: 0.75rem;
+  }
+
+  .visa-button {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .visa-card-header {
+    padding: 0.5rem;
+  }
+}
+
+/* Стили для мобильных устройств без hover */
+@media (hover: none) {
+  .visa-card:active {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .visa-button:active {
+    background-color: #7040e0;
+  }
 }

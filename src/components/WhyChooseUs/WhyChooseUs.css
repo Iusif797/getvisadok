@@ -20,10 +20,34 @@
   justify-content: center;
   width: 90%;
   margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.all-countries-btn:hover {
+  background-color: #00a575;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 194, 138, 0.3);
+}
+
+.all-countries-btn:hover .arrow-down {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
 }
 
 .arrow-down {
   margin-left: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .section-title {
@@ -49,6 +73,14 @@
   flex-direction: row;
   width: 100%;
   justify-content: flex-start;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  background-color: rgba(138, 92, 247, 0.05);
+  transform: translateX(5px);
 }
 
 .feature-icon {
@@ -63,9 +95,90 @@
   margin-right: 1rem;
   font-size: 1.5rem;
   flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 5px 15px rgba(138, 92, 247, 0.3);
 }
 
 .feature-title {
   font-size: 1.2rem;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-title {
+  color: #8a5cf7;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 375px) {
+  .all-countries-btn {
+    width: 95%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .features-container {
+    width: 95%;
+    gap: 1.2rem;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .feature-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.75rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) {
+  .all-countries-btn {
+    width: 85%;
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+  }
+
+  .features-container {
+    width: 75%;
+  }
+
+  .feature-icon {
+    width: 65px;
+    height: 65px;
+    margin-right: 1.25rem;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+  }
 }
