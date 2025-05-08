@@ -1,0 +1,71 @@
+.why-choose-us {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.all-countries-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.arrow-down {
+  margin-left: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+  align-items: center;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.feature-icon {
+  background-color: #8a5cf7;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
